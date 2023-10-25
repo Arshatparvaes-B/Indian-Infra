@@ -107,6 +107,14 @@
     margin:3px 6px;
     border-radius:28px;
 }
+#services .box:hover{
+    border:2px solid darkblue;
+    padding:34px;
+    margin:3px 6px;
+    border-radius:28px;
+    background-color:darkblue;
+    color:white;
+}
 #services .box img{
     height:100px;
     width:100px;
