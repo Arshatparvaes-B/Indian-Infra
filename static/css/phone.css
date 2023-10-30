@@ -17,6 +17,10 @@
 #home::before{
     height:480px;
 }
+#home .h-primary{
+    font-size:26px;
+
+}
 #home p{
     font-size:13px;
 }
@@ -31,6 +35,7 @@
 /* project section */
 #projects{
     flex-wrap:wrap;
+    flex-direction:column;
 }
 #projects img{
     width:66px;
