@@ -34,12 +34,12 @@ def contact_submit():
         # Handle the form data, save to a database, etc.
         try:
                     # Access email configuration from environment variables
-            # email_host = os.environ.get('SSN_PROJECT_EMAIL_ADDRESS')
-            # email_password = os.environ.get('SSN_PROJECT_EMAIL_PASS')
+
+            
             email_port = 587
             email_host =  "smtp.gmail.com" 
-            email_password = "muanlosmmbtztfzi"
-            email_from = "ssnmentorshipprojectmailsender@gmail.com"
+            email_from = os.environ.get('SSN_PROJECT_EMAIL_ADDRESS')
+            email_password = os.environ.get('SSN_PROJECT_EMAIL_PASS')
             email_server = smtplib.SMTP(email_host, email_port)
             email_server.starttls()
             email_server.login(email_from, email_password)
